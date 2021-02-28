@@ -53,6 +53,7 @@ html {
 body {
 	margin: 0 auto;
 	padding: 0;
+	overflow-x: hidden;
 }
 
 h1,
@@ -202,7 +203,16 @@ a.cart-contents {
 
 .product-details-container {
 	display: flex;
+	flex-flow: row wrap;
 	justify-content: left;
+	margin: 0 auto;
+}
+.product-image-container {
+	width: 100%;
+}
+.product-image {
+	width: 100%;
+	max-width: 324px;
 }
 
 .product-image-container,
@@ -221,8 +231,12 @@ ul.products-list {
 	text-align: center;
 	margin-bottom: 2rem;
 }
+
+.product-details-list-container {
+	width: 100%;
+	max-width: 400px;
+}
 ul.product-details-list {
-	width: 50%;
 	display: flex;
 	flex-flow: column;
 	padding-left: 2rem;
@@ -364,4 +378,14 @@ footer {
 	max-width: 600px;
 	color: rgba(15, 128, 15);
 	background: rgba(15, 128, 15, 0.2);
+}
+
+@media screen and (min-width: 800px) {
+	.product-details-list-container {
+		width: 50%;
+	}
+
+	.product-image-container {
+		width: 50%;
+	}
 }
