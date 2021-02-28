@@ -46,8 +46,13 @@
                 <h1>Shop - All Products</h1>
             </div>
             <div class="products-sort-container">
-                <p class="sort-text">Sort products by price, low to high</p>
-                <button type="button" class="sortButton">Sort</button>
+                <select class="sort-dropdown-list">
+                    <option value="price-ascending">Sort by price &#40;low to high&#41;</option>
+                    <option value="price-descending">Sort by price &#40;high to low&#41;</option>
+                    <option value="name-ascending">Sort alphabetically &#40;A to Z&#41;</option>
+                    <option value="name-descending">Sort alphabetically &#40;Z to A&#41;</option>
+            </select>
+            
             </div>
             <div class="resultsContainer">
                 <div class="loader">
