@@ -3,7 +3,7 @@ const params = new URLSearchParams(queryString);
 const id = params.get("id");
 
 const productContainer = document.querySelector(".productContainer");
-const url = "http://betheicon.no/flowerpower/wp-json/wc/store/products/"+ id;
+const url = "http://betheicon.no/old_files/flowerpower/wp-json/wc/store/products/"+ id;
 
 async function getProductDetails() {
     try {
