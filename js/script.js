@@ -1,5 +1,5 @@
 const resultsContainer = document.querySelector(".resultsContainer");
-const url = "http://betheicon.no/old_files/flowerpower/wp-json/wc/store/products/";
+const url = "http://betheicon.no/flowerpower/wp-json/wc/store/products/";
 
 
 async function getProducts() {
